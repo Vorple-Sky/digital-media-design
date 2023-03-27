@@ -12,19 +12,19 @@ function setup() {
     // removeElements();
 
     //draw a white circle in the middle of the page
-    // fill(255);
-    // ellipse(width/2, height/2, 100,100);
+    fill(255);
+    ellipse(width/2, height/2, 100,100);
 
     //this is how to use p5.js and javascript to generate images into html elements
 
     //create an image element in html
-    // let cat = createImg("images/cat.png");
+    let cat = createImg("images/cat.png");
 
     //select size of image
-    // cat.size(200,200);
+    cat.size(200,200);
 
     //set the position
-    // cat.position(500, 500);
+    cat.position(500, 500);
 
     // give it an id
     // cat.id('cat');
