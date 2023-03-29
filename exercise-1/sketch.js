@@ -13,38 +13,43 @@ function setup() {
 
     //draw a white circle in the middle of the page
     fill(255);
-    ellipse(width/2, height/2, 100,100);
+    //ellipse(width/2, height/2, 100,100);
 
     //this is how to use p5.js and javascript to generate images into html elements
 
     //create an image element in html
-    let cat = createImg("images/cat.png");
+    let rabbit = createImg("images/rabbit.jpeg");
+    let sleepyrabbit =createImg("images/sleepyrabbit.jpeg");
 
     //select size of image
-    cat.size(200,200);
+    rabbit.size(200,200);
+    sleepyrabbit.size(150,150);
 
     //set the position
-    cat.position(500, 500);
+    rabbit.position(500, 500);
+    sleepyrabbit.position(200,200);
+
 
     // give it an id
-    // cat.id('cat');
+    rabbit.id('rabbit');
+    sleepyrabbit.id('sleepyrabbit');
 
     //now you can see that in your html, an <img> tag is created that has an id of "cat", has a size of 200x200, and is positioned at 500x500 on the page. 
 
     //lets make this follow your cursor
-    //cat.position(mouseX, mouseY);
+    sleepyrabbit.position(mouseX, mouseY);
 
     //lets make this cat move
-    //cat.position((200 + a), 500);
+    //rabbit.position((200 + a), 500);
 
 
     //lets make this cat move without leaving a trail - removeElements(); up at the top
-    // cat.position((200 + a), 500);
+    rabbit.position((200 + a), 500);
 
-    // a++;
+    a++;
 
     //make the bear appear when pressed
-    // cat.mousePressed(bear)
+    //rabbit.mousePressed(bear)
 
   }
   
