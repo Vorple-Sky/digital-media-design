@@ -3,7 +3,7 @@ let y = 0;
 let xpos;
 let ypos;
 
-let mode = 1;
+//let mode = 1;
 
 let bear = document.getElementById('bear');
 
@@ -25,7 +25,7 @@ function setup() {
     //select size of image
     cat.size(200,200);
      // give it an id
-     cat.id('cat');
+    cat.id('cat');
 
     //set the position
     //create arithmatic for x and y position. this lets us read out the position
@@ -35,9 +35,9 @@ function setup() {
   
     //position the cat based on the arrow keys
     cat.position(xpos, ypos);
+  
 
-
-//controls using arrow keys
+    //controls using arrow keys
     if (keyIsPressed){
       if(keyCode == UP_ARROW){
 
@@ -75,7 +75,7 @@ function setup() {
         bear.style.display='none';
 
         //change scene to the next to the next one by adding 1
-        mode++;
+        mode = 2;
       }
 
       //changing of scenes
@@ -84,7 +84,7 @@ function setup() {
         bear.style.display='none';
       }
     }
-    // console.log("cat is at: " + xpos + ", " + ypos);
+    console.log("cat is at: " + xpos + ", " + ypos);
   }
   
   function windowResized() {
