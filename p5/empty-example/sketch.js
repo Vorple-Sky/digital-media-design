@@ -3,6 +3,6 @@ function setup() {
 }
 
 function draw() {
-  // put drawing code here
+  // put drawing code her
 
   }
