@@ -1,6 +1,7 @@
-let ypos = 200;
-let xpos = 80;
-let xstep = 60;
+let origx = 200;
+let origy = 100;
+let destx = 200;
+let desty = 300;
 
 function setup() {
   // put setup code here
@@ -11,11 +12,17 @@ function setup() {
 function draw() {
   // put drawing code here
   background(255);
-  fill(50);
-  noStroke();
-  for (let i =0; i < 5; i++) {
-    ellipse(xpos + (xstep*i), ypos, 40, 40);
+  fill(255);
+  strokeWeight(3);
+
+  for (let i = 25; i <400; i+=25){
+    stroke(50);
+    line(i, 200, origx, origy);
+    stroke(240);
+    line(i, 200, destx, desty);
+
   }
+
 
 
   }
