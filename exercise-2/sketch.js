@@ -19,7 +19,7 @@ function setup() {
 
 
     if (mode == 1){
-      displayCat();
+      displayBun();
     }
 
     
@@ -54,15 +54,15 @@ function setup() {
 }
 
 
-function displayCat(){
+function displayBun(){
     removeElements();
     //lets manipulate the DOM and make our cat move with the arrow keys
     //create an image element in html
-    let cat = createImg("images/cat.png");
+    let bun = createImg("images/bunny.jpeg");
     //select size of image
-    cat.size(200,200);
+    bun.size(200,200);
      // give it an id
-    cat.id('cat');
+    bun.id('bun');
 
     //set the position
     //create arithmetic for x and y position. this lets us read out the position
@@ -71,7 +71,7 @@ function displayCat(){
 
   
     //position the cat based on the arrow keys
-    cat.position(xpos, ypos);
+    bun.position(xpos, ypos);
 
 
 //controls using arrow keys
