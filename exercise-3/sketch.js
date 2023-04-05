@@ -70,7 +70,11 @@ function output() {
   } else if (answers == "green"){
     background(0,255,0);
     Answer1.innerHTML = answers;
-  } else {
+  } else if (answers == "magenta"){
+    background(255,0,255);
+    Answer1.innerHTML = answers;
+    a.id('next');
+  }else {
     Answer1.innerHTML = "i don't know that color";
   }
 }
