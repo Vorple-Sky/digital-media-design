@@ -1,30 +1,28 @@
-let hasClicked = false;
-let xpos = 0;
-let ypos = 0;
+let rectY = [];
+let rectX = [];
+
 
 function setup() {
   // put setup code here
   createCanvas(400,400);
-  
 
 }
 
 function draw() {
   // put drawing code here
   background(50);
-  rectMode(CENTER);
   noStroke();
-  fill(255);
-  if(hasClicked){
-    rect(xpos, ypos, 50, 25);
-    ypos += 1;
+  rectMode(CENTER);
+  fill(225);
+  
+  for(let i = 0; i<rectY.length; i++){
+    rect(rectX[i], rectY[i], 50, 25);
+    rectY[i] += 1;
 
   }
 
   }
-
 function mousePressed(){
-  hasClicked = true;
-  xpos = mouseX;
-  ypos = mouseY;
+  rectY.push(mouseY);
+  rectX.push(mouseX);
 }
