@@ -1,26 +1,30 @@
-let xpos = 80;
-let xstep = 30;
-let ypos = 140;
-let ystep = 30;
-
+let hasClicked = false;
+let xpos = 0;
+let ypos = 0;
 
 function setup() {
   // put setup code here
   createCanvas(400,400);
-  noLoop();
+  
+
 }
 
 function draw() {
   // put drawing code here
-  background(255);
-  fill(50);
+  background(50);
+  rectMode(CENTER);
   noStroke();
-
-  for(let j =0; j <5; j++){
-    for (let i = 0; i < 9; i++){
-      ellipse(xpos + (xstep*i), ypos + (ystep*j), 20, 20)
-
-    }
-  }
+  fill(255);
+  if(hasClicked){
+    rect(xpos, ypos, 50, 25);
+    ypos += 1;
 
   }
+
+  }
+
+function mousePressed(){
+  hasClicked = true;
+  xpos = mouseX;
+  ypos = mouseY;
+}
